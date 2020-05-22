@@ -31,8 +31,10 @@ class DailyPicsViewController: UIViewController {
 
     // MARK: - IBActions
     @IBAction func goToPreviousMonth(_ sender: Any) {
+        fetchNewMonth(monthFromNow: -1)
     }
     @IBAction func goToNextMonth(_ sender: Any) {
+        fetchNewMonth(monthFromNow: 1)
     }
 
 
@@ -55,7 +57,7 @@ class DailyPicsViewController: UIViewController {
             default:
                 newMonth(newMonth: monthFromNow)
         }
-        
+
     }
 
     // MARK: - Helper Methods
