@@ -9,11 +9,18 @@
 /* Begin PBXBuildFile section */
 		E2458E4224771255002FC5F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2458E4124771255002FC5F0 /* AppDelegate.m */; };
 		E2458E4524771255002FC5F0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2458E4424771255002FC5F0 /* SceneDelegate.m */; };
-		E2458E4824771255002FC5F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2458E4724771255002FC5F0 /* ViewController.m */; };
 		E2458E4B24771255002FC5F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2458E4924771255002FC5F0 /* Main.storyboard */; };
 		E2458E4D24771258002FC5F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2458E4C24771258002FC5F0 /* Assets.xcassets */; };
 		E2458E5024771258002FC5F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2458E4E24771258002FC5F0 /* LaunchScreen.storyboard */; };
 		E2458E5324771258002FC5F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2458E5224771258002FC5F0 /* main.m */; };
+		E25BE9A9247716AE00155DBE /* CBDPicOfTheDay.m in Sources */ = {isa = PBXBuildFile; fileRef = E25BE9A8247716AE00155DBE /* CBDPicOfTheDay.m */; };
+		E25BE9AC247716C800155DBE /* CBDPicOfTheDayController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25BE9AB247716C800155DBE /* CBDPicOfTheDayController.m */; };
+		E25BE9AF2477170F00155DBE /* DailyPicsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25BE9AE2477170F00155DBE /* DailyPicsCollectionViewController.swift */; };
+		E25BE9B3247717A000155DBE /* DetailPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25BE9B2247717A000155DBE /* DetailPopupViewController.swift */; };
+		E25BE9B624771B3900155DBE /* CBDPicOfTheDay+JSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E25BE9B524771B3900155DBE /* CBDPicOfTheDay+JSONSerialization.m */; };
+		E25BE9B82477361500155DBE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25BE9B72477361500155DBE /* DetailViewController.swift */; };
+		E25BE9BA2477362C00155DBE /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25BE9B92477362C00155DBE /* OnboardViewController.swift */; };
+		E25BE9BC2477368800155DBE /* DailyPicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25BE9BB2477368800155DBE /* DailyPicCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +29,23 @@
 		E2458E4124771255002FC5F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E2458E4324771255002FC5F0 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		E2458E4424771255002FC5F0 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		E2458E4624771255002FC5F0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E2458E4724771255002FC5F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E2458E4A24771255002FC5F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2458E4C24771258002FC5F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2458E4F24771258002FC5F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2458E5124771258002FC5F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2458E5224771258002FC5F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E25BE9A7247716AE00155DBE /* CBDPicOfTheDay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBDPicOfTheDay.h; sourceTree = "<group>"; };
+		E25BE9A8247716AE00155DBE /* CBDPicOfTheDay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBDPicOfTheDay.m; sourceTree = "<group>"; };
+		E25BE9AA247716C800155DBE /* CBDPicOfTheDayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBDPicOfTheDayController.h; sourceTree = "<group>"; };
+		E25BE9AB247716C800155DBE /* CBDPicOfTheDayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBDPicOfTheDayController.m; sourceTree = "<group>"; };
+		E25BE9AD2477170F00155DBE /* AstronomyPicOfTheDay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AstronomyPicOfTheDay-Bridging-Header.h"; sourceTree = "<group>"; };
+		E25BE9AE2477170F00155DBE /* DailyPicsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPicsCollectionViewController.swift; sourceTree = "<group>"; };
+		E25BE9B2247717A000155DBE /* DetailPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPopupViewController.swift; sourceTree = "<group>"; };
+		E25BE9B424771B3900155DBE /* CBDPicOfTheDay+JSONSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CBDPicOfTheDay+JSONSerialization.h"; sourceTree = "<group>"; };
+		E25BE9B524771B3900155DBE /* CBDPicOfTheDay+JSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CBDPicOfTheDay+JSONSerialization.m"; sourceTree = "<group>"; };
+		E25BE9B72477361500155DBE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E25BE9B92477362C00155DBE /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		E25BE9BB2477368800155DBE /* DailyPicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPicCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +78,69 @@
 		E2458E3F24771255002FC5F0 /* AstronomyPicOfTheDay */ = {
 			isa = PBXGroup;
 			children = (
+				E25BE9AD2477170F00155DBE /* AstronomyPicOfTheDay-Bridging-Header.h */,
+				E25BE9A6247715F600155DBE /* Models */,
+				E25BE9A5247715DB00155DBE /* Views */,
+				E25BE9A4247715C200155DBE /* View Controllers */,
+				E25BE9A3247715B200155DBE /* Controllers */,
+				E2458E5224771258002FC5F0 /* main.m */,
+				E2458E592477129D002FC5F0 /* Resources */,
+			);
+			path = AstronomyPicOfTheDay;
+			sourceTree = "<group>";
+		};
+		E2458E592477129D002FC5F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				E2458E4024771255002FC5F0 /* AppDelegate.h */,
 				E2458E4124771255002FC5F0 /* AppDelegate.m */,
 				E2458E4324771255002FC5F0 /* SceneDelegate.h */,
 				E2458E4424771255002FC5F0 /* SceneDelegate.m */,
-				E2458E4624771255002FC5F0 /* ViewController.h */,
-				E2458E4724771255002FC5F0 /* ViewController.m */,
-				E2458E4924771255002FC5F0 /* Main.storyboard */,
 				E2458E4C24771258002FC5F0 /* Assets.xcassets */,
-				E2458E4E24771258002FC5F0 /* LaunchScreen.storyboard */,
 				E2458E5124771258002FC5F0 /* Info.plist */,
-				E2458E5224771258002FC5F0 /* main.m */,
 			);
-			path = AstronomyPicOfTheDay;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E25BE9A3247715B200155DBE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E25BE9AA247716C800155DBE /* CBDPicOfTheDayController.h */,
+				E25BE9AB247716C800155DBE /* CBDPicOfTheDayController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E25BE9A4247715C200155DBE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E25BE9AE2477170F00155DBE /* DailyPicsCollectionViewController.swift */,
+				E25BE9B2247717A000155DBE /* DetailPopupViewController.swift */,
+				E25BE9B72477361500155DBE /* DetailViewController.swift */,
+				E25BE9B92477362C00155DBE /* OnboardViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E25BE9A5247715DB00155DBE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2458E4924771255002FC5F0 /* Main.storyboard */,
+				E2458E4E24771258002FC5F0 /* LaunchScreen.storyboard */,
+				E25BE9BB2477368800155DBE /* DailyPicCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E25BE9A6247715F600155DBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E25BE9A7247716AE00155DBE /* CBDPicOfTheDay.h */,
+				E25BE9A8247716AE00155DBE /* CBDPicOfTheDay.m */,
+				E25BE9B424771B3900155DBE /* CBDPicOfTheDay+JSONSerialization.h */,
+				E25BE9B524771B3900155DBE /* CBDPicOfTheDay+JSONSerialization.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,11 +169,13 @@
 		E2458E3524771255002FC5F0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CBD;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Christopher Devito";
 				TargetAttributes = {
 					E2458E3C24771255002FC5F0 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -146,7 +215,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2458E4824771255002FC5F0 /* ViewController.m in Sources */,
+				E25BE9BA2477362C00155DBE /* OnboardViewController.swift in Sources */,
+				E25BE9B82477361500155DBE /* DetailViewController.swift in Sources */,
+				E25BE9B3247717A000155DBE /* DetailPopupViewController.swift in Sources */,
+				E25BE9A9247716AE00155DBE /* CBDPicOfTheDay.m in Sources */,
+				E25BE9AC247716C800155DBE /* CBDPicOfTheDayController.m in Sources */,
+				E25BE9AF2477170F00155DBE /* DailyPicsCollectionViewController.swift in Sources */,
+				E25BE9B624771B3900155DBE /* CBDPicOfTheDay+JSONSerialization.m in Sources */,
+				E25BE9BC2477368800155DBE /* DailyPicCollectionViewCell.swift in Sources */,
 				E2458E4224771255002FC5F0 /* AppDelegate.m in Sources */,
 				E2458E5324771258002FC5F0 /* main.m in Sources */,
 				E2458E4524771255002FC5F0 /* SceneDelegate.m in Sources */,
@@ -289,15 +365,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8825K9HH49;
-				INFOPLIST_FILE = AstronomyPicOfTheDay/Info.plist;
+				INFOPLIST_FILE = AstronomyPicOfTheDay/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.christopherdevito.AstronomyPicOfTheDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AstronomyPicOfTheDay/AstronomyPicOfTheDay-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -306,15 +386,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8825K9HH49;
-				INFOPLIST_FILE = AstronomyPicOfTheDay/Info.plist;
+				INFOPLIST_FILE = AstronomyPicOfTheDay/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.christopherdevito.AstronomyPicOfTheDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AstronomyPicOfTheDay/AstronomyPicOfTheDay-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

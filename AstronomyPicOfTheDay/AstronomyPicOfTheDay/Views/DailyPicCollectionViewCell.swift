@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  DailyPicCollectionViewCell.swift
 //  AstronomyPicOfTheDay
 //
 //  Created by Christopher Devito on 5/21/20.
 //  Copyright © 2020 Christopher Devito. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+import UIKit
 
-@interface ViewController : UIViewController
-
-
-@end
-
+class DailyPicCollectionViewCell: UICollectionViewCell {
+    
+}
