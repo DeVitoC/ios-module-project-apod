@@ -200,7 +200,7 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="regular"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="goToPreviousDay:" destination="CiO-Hl-MjY" eventType="touchUpInside" id="sQt-Kw-Ox8"/>
+                                                    <action selector="goToPreviousMonth:" destination="CiO-Hl-MjY" eventType="touchUpInside" id="sQt-Kw-Ox8"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEPTEMBER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Z5-Mq-KKV">
@@ -219,7 +219,7 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="regular"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="goToNextDay:" destination="CiO-Hl-MjY" eventType="touchUpInside" id="ppg-cz-gFw"/>
+                                                    <action selector="goToNextMonth:" destination="CiO-Hl-MjY" eventType="touchUpInside" id="ppg-cz-gFw"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -273,7 +273,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration" suppressesIncrementalRendering="YES">
-                                    <dataDetectorTypes key="dataDetectorTypes"/>
+                                    <dataDetectorTypes key="dataDetectorTypes" none="YES"/>
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>

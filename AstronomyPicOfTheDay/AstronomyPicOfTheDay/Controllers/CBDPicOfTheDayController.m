@@ -17,11 +17,11 @@
 - (instancetype)init {
     self = [super init];
     if (!self) { return nil; }
-    _pics = [[NSArray alloc] init];
+    _pics = [[NSMutableArray alloc] init];
     return self;
 }
 
-- (instancetype)initWithPics:(NSArray *)pics {
+- (instancetype)initWithPics:(NSMutableArray *)pics {
     self = [super init];
     if (!self) { return nil; }
     _pics = pics;
@@ -32,7 +32,9 @@
            completionBlock:(CBDPicsCompletion)completionBlock {
     NSString *apiKey = @"IjCchzjn0EuNgmVSr824DPsW57IXpXMwg7bS9mnc";
     NSURL *baseURL = [NSURL URLWithString:@"https://api.nasa.gov/planetary/apod"];
-    NSString *dateString = [NSString stringWithFormat:@"%@", date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"yyyy-MM-dd";
+    NSString *dateString = [dateFormatter stringFromDate:date];
     NSURLQueryItem *searchDate = [NSURLQueryItem queryItemWithName:@"date" value: dateString];
     NSURLQueryItem *searchAPIKey = [NSURLQueryItem queryItemWithName:@"api_key" value:apiKey];
     NSURLComponents *components = [NSURLComponents componentsWithURL:baseURL resolvingAgainstBaseURL:YES];
@@ -66,18 +68,13 @@
 
         CBDPicOfTheDay *pic = [[CBDPicOfTheDay alloc] initWithDictionary:dictionary];
         if (pic) {
-            [self addPic:pic];
+            [self.pics addObject:pic];
             completionBlock(pic, nil);
         }
         completionBlock(nil, nil);
     }];
     [task resume];
 
-}
-
-- (NSArray *)addPic:(CBDPicOfTheDay *)pic {
-    [_pics arrayByAddingObject:pic];
-    return _pics;
 }
 
 @end

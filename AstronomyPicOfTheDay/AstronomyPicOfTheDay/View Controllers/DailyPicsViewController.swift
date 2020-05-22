@@ -11,7 +11,13 @@ import UIKit
 class DailyPicsViewController: UIViewController {
 
     // MARK: - Properties
-    let picOfTheDayController = PicOfTheDayController()
+    var picOfTheDayController: PicOfTheDayController?
+    var month: Month?
+    var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter
+    }()
 
     // MARK: - IBOutlets
     @IBOutlet var collectionView: UICollectionView!
@@ -20,18 +26,63 @@ class DailyPicsViewController: UIViewController {
     // MARK: - View Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        monthLabel.text = month?.rawValue.capitalized
     }
 
     // MARK: - IBActions
-    @IBAction func goToPreviousDay(_ sender: Any) {
+    @IBAction func goToPreviousMonth(_ sender: Any) {
     }
-    @IBAction func goToNextDay(_ sender: Any) {
+    @IBAction func goToNextMonth(_ sender: Any) {
     }
 
 
     // MARK: - Action Methods
+    func fetchNewMonth(monthFromNow: Int) {
+        guard let month = month else { return }
+        switch month {
+            case .january:
+                if monthFromNow < 0 {
+                    self.month = .december
+                } else {
+                    self.month = .february
+            }
+            case .december:
+                if monthFromNow > 0 {
+                    self.month = .january
+                } else {
+                    self.month = .november
+            }
+            default:
+                newMonth(newMonth: monthFromNow)
+        }
+        
+    }
+
+    // MARK: - Helper Methods
+    func newMonth(newMonth: Int) {
+        switch newMonth {
+            case 2:
+                month = newMonth > 0 ? .march : .january
+            case 3:
+                month = newMonth > 0 ? .april : .february
+            case 4:
+                month = newMonth > 0 ? .may : .march
+            case 5:
+                month = newMonth > 0 ? .june : .april
+            case 6:
+                month = newMonth > 0 ? .july : .may
+            case 7:
+                month = newMonth > 0 ? .august : .june
+            case 8:
+                month = newMonth > 0 ? .september : .july
+            case 9:
+                month = newMonth > 0 ? .october : .august
+            case 10:
+                month = newMonth > 0 ? .november : .september
+            default:
+                month = newMonth > 0 ? .december : .october
+        }
+    }
 
     /*
     // MARK: - Navigation
@@ -54,6 +105,7 @@ extension DailyPicsViewController: UICollectionViewDelegate, UICollectionViewDat
         if section == 0 {
             return 1
         } else {
+            guard let picOfTheDayController = self.picOfTheDayController else { return 0}
             return picOfTheDayController.pics.count
         }
     }
@@ -62,6 +114,8 @@ extension DailyPicsViewController: UICollectionViewDelegate, UICollectionViewDat
         let cell = DailyPicCollectionViewCell()
         return cell
     }
+}
 
-
+enum Month: String {
+    case january, february, march, april, may, june, july, august, september, october, november, december
 }

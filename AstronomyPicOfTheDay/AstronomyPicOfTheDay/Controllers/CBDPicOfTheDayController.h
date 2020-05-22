@@ -16,7 +16,7 @@ typedef void (^CBDPicsCompletion)(CBDPicOfTheDay *_Nullable pic, NSError *_Nulla
 NS_SWIFT_NAME(PicOfTheDayController)
 @interface CBDPicOfTheDayController : NSObject
 
-@property (nonatomic, readonly, copy) NSArray *pics;
+@property (nonatomic, readonly, copy) NSMutableArray<CBDPicOfTheDay *> *pics;
 
 - (instancetype)init;
 
@@ -24,8 +24,6 @@ NS_SWIFT_NAME(PicOfTheDayController)
 
 - (void)fetchPhotosForDate:(NSDate *)date
            completionBlock:(CBDPicsCompletion)completionBlock;
-
-- (NSArray *)addPic:(CBDPicOfTheDay *)pic;
 
 @end
 

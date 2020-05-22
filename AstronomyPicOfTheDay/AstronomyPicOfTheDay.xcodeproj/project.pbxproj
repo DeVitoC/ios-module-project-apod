@@ -19,7 +19,6 @@
 		E2458E5324771258002FC5F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2458E5224771258002FC5F0 /* main.m */; };
 		E25BE9A9247716AE00155DBE /* CBDPicOfTheDay.m in Sources */ = {isa = PBXBuildFile; fileRef = E25BE9A8247716AE00155DBE /* CBDPicOfTheDay.m */; };
 		E25BE9AC247716C800155DBE /* CBDPicOfTheDayController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25BE9AB247716C800155DBE /* CBDPicOfTheDayController.m */; };
-		E25BE9AF2477170F00155DBE /* DailyPicsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25BE9AE2477170F00155DBE /* DailyPicsCollectionViewController.swift */; };
 		E25BE9B3247717A000155DBE /* DetailPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25BE9B2247717A000155DBE /* DetailPopupViewController.swift */; };
 		E25BE9B624771B3900155DBE /* CBDPicOfTheDay+JSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E25BE9B524771B3900155DBE /* CBDPicOfTheDay+JSONSerialization.m */; };
 		E25BE9B82477361500155DBE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25BE9B72477361500155DBE /* DetailViewController.swift */; };
@@ -47,7 +46,6 @@
 		E25BE9AA247716C800155DBE /* CBDPicOfTheDayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBDPicOfTheDayController.h; sourceTree = "<group>"; };
 		E25BE9AB247716C800155DBE /* CBDPicOfTheDayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBDPicOfTheDayController.m; sourceTree = "<group>"; };
 		E25BE9AD2477170F00155DBE /* AstronomyPicOfTheDay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AstronomyPicOfTheDay-Bridging-Header.h"; sourceTree = "<group>"; };
-		E25BE9AE2477170F00155DBE /* DailyPicsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPicsCollectionViewController.swift; sourceTree = "<group>"; };
 		E25BE9B2247717A000155DBE /* DetailPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPopupViewController.swift; sourceTree = "<group>"; };
 		E25BE9B424771B3900155DBE /* CBDPicOfTheDay+JSONSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CBDPicOfTheDay+JSONSerialization.h"; sourceTree = "<group>"; };
 		E25BE9B524771B3900155DBE /* CBDPicOfTheDay+JSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CBDPicOfTheDay+JSONSerialization.m"; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 		E25BE9A4247715C200155DBE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E25BE9AE2477170F00155DBE /* DailyPicsCollectionViewController.swift */,
 				E25BE9B2247717A000155DBE /* DetailPopupViewController.swift */,
 				E25BE9B72477361500155DBE /* DetailViewController.swift */,
 				E25BE9B92477362C00155DBE /* OnboardViewController.swift */,
@@ -236,7 +233,6 @@
 				E25BE9B3247717A000155DBE /* DetailPopupViewController.swift in Sources */,
 				E25BE9A9247716AE00155DBE /* CBDPicOfTheDay.m in Sources */,
 				E25BE9AC247716C800155DBE /* CBDPicOfTheDayController.m in Sources */,
-				E25BE9AF2477170F00155DBE /* DailyPicsCollectionViewController.swift in Sources */,
 				E25BE9B624771B3900155DBE /* CBDPicOfTheDay+JSONSerialization.m in Sources */,
 				E25BE9BC2477368800155DBE /* DailyPicCollectionViewCell.swift in Sources */,
 				E2458E4224771255002FC5F0 /* AppDelegate.m in Sources */,
