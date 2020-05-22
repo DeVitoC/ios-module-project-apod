@@ -5,3 +5,6 @@
 #import "CBDPicOfTheDay.h"
 #import "CBDPicOfTheDay+JSONSerialization.h"
 #import "CBDPicOfTheDayController.h"
+#import "AppDelegate.h"
+#import "SceneDelegate.h"
+#import "AstronomyPicOfTheDay-Bridging-Header.h"

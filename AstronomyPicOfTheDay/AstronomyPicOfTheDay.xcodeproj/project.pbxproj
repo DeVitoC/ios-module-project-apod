@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E228C90124777BDA0081BFB3 /* icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = E228C90024777BDA0081BFB3 /* icon-1024.png */; };
+		E228C90524777C190081BFB3 /* planet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E228C90424777C190081BFB3 /* planet.pdf */; };
+		E228C909247783A70081BFB3 /* APODSplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = E228C908247783A70081BFB3 /* APODSplashScreen.png */; };
+		E228C90B247797CD0081BFB3 /* DailyPicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E228C90A247797CD0081BFB3 /* DailyPicsViewController.swift */; };
 		E2458E4224771255002FC5F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2458E4124771255002FC5F0 /* AppDelegate.m */; };
 		E2458E4524771255002FC5F0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2458E4424771255002FC5F0 /* SceneDelegate.m */; };
 		E2458E4B24771255002FC5F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2458E4924771255002FC5F0 /* Main.storyboard */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E228C90024777BDA0081BFB3 /* icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-1024.png"; path = "../../../Design/Assets/iOS/AppIcon.appiconset/icon-1024.png"; sourceTree = "<group>"; };
+		E228C90424777C190081BFB3 /* planet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = planet.pdf; path = ../../../Design/Assets/planet.pdf; sourceTree = "<group>"; };
+		E228C908247783A70081BFB3 /* APODSplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = APODSplashScreen.png; sourceTree = "<group>"; };
+		E228C90A247797CD0081BFB3 /* DailyPicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPicsViewController.swift; sourceTree = "<group>"; };
 		E2458E3D24771255002FC5F0 /* AstronomyPicOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstronomyPicOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2458E4024771255002FC5F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E2458E4124771255002FC5F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,6 +106,9 @@
 				E2458E4424771255002FC5F0 /* SceneDelegate.m */,
 				E2458E4C24771258002FC5F0 /* Assets.xcassets */,
 				E2458E5124771258002FC5F0 /* Info.plist */,
+				E228C90424777C190081BFB3 /* planet.pdf */,
+				E228C90024777BDA0081BFB3 /* icon-1024.png */,
+				E228C908247783A70081BFB3 /* APODSplashScreen.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -118,6 +129,7 @@
 				E25BE9B2247717A000155DBE /* DetailPopupViewController.swift */,
 				E25BE9B72477361500155DBE /* DetailViewController.swift */,
 				E25BE9B92477362C00155DBE /* OnboardViewController.swift */,
+				E228C90A247797CD0081BFB3 /* DailyPicsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -202,8 +214,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E228C90524777C190081BFB3 /* planet.pdf in Resources */,
 				E2458E5024771258002FC5F0 /* LaunchScreen.storyboard in Resources */,
+				E228C90124777BDA0081BFB3 /* icon-1024.png in Resources */,
 				E2458E4D24771258002FC5F0 /* Assets.xcassets in Resources */,
+				E228C909247783A70081BFB3 /* APODSplashScreen.png in Resources */,
 				E2458E4B24771255002FC5F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25BE9BA2477362C00155DBE /* OnboardViewController.swift in Sources */,
+				E228C90B247797CD0081BFB3 /* DailyPicsViewController.swift in Sources */,
 				E25BE9B82477361500155DBE /* DetailViewController.swift in Sources */,
 				E25BE9B3247717A000155DBE /* DetailPopupViewController.swift in Sources */,
 				E25BE9A9247716AE00155DBE /* CBDPicOfTheDay.m in Sources */,

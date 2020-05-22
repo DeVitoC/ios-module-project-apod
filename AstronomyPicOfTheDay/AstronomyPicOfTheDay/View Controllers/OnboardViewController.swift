@@ -12,10 +12,11 @@ class OnboardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
+    @IBAction func checkItOut(_ sender: Any) {
+        performSegue(withIdentifier: "ViewPicsSegue", sender: self)
+    }
 
     /*
     // MARK: - Navigation

@@ -16,14 +16,16 @@ typedef void (^CBDPicsCompletion)(CBDPicOfTheDay *_Nullable pic, NSError *_Nulla
 
 @interface CBDPicOfTheDayController : NSObject
 
-@property (nonatomic, readonly) NSArray *pics;
+//@property (nonatomic, readonly, copy) NSArray *pics;
 
-- (instancetype)initWithPics:(NSArray *)pics;
+- (instancetype)init;
+
+//- (instancetype)initWithPics:(NSArray *)pics;
 
 - (void)fetchPhotosForDate:(NSDate *)date
            completionBlock:(CBDPicsCompletion)completionBlock;
 
-- (void)addPic:(CBDPicOfTheDay *)pic;
+//- (NSArray *)addPic:(CBDPicOfTheDay *)pic;
 
 @end
 
