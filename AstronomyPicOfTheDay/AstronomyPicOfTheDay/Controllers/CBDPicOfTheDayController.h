@@ -10,22 +10,22 @@
 @class CBDPicOfTheDay;
 
 NS_ASSUME_NONNULL_BEGIN
-NS_SWIFT_NAME(PicOfTheDayController)
 
 typedef void (^CBDPicsCompletion)(CBDPicOfTheDay *_Nullable pic, NSError *_Nullable error);
 
+NS_SWIFT_NAME(PicOfTheDayController)
 @interface CBDPicOfTheDayController : NSObject
 
-//@property (nonatomic, readonly, copy) NSArray *pics;
+@property (nonatomic, readonly, copy) NSArray *pics;
 
 - (instancetype)init;
 
-//- (instancetype)initWithPics:(NSArray *)pics;
+- (instancetype)initWithPics:(NSArray *)pics;
 
 - (void)fetchPhotosForDate:(NSDate *)date
            completionBlock:(CBDPicsCompletion)completionBlock;
 
-//- (NSArray *)addPic:(CBDPicOfTheDay *)pic;
+- (NSArray *)addPic:(CBDPicOfTheDay *)pic;
 
 @end
 

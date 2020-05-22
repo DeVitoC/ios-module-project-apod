@@ -17,16 +17,16 @@
 - (instancetype)init {
     self = [super init];
     if (!self) { return nil; }
-    //_pics = [[NSArray alloc] init];
+    _pics = [[NSArray alloc] init];
     return self;
 }
 
-//- (instancetype)initWithPics:(NSArray *)pics {
-//    self = [super init];
-//    if (!self) { return nil; }
-//    _pics = pics;
-//    return self;
-//}
+- (instancetype)initWithPics:(NSArray *)pics {
+    self = [super init];
+    if (!self) { return nil; }
+    _pics = pics;
+    return self;
+}
 
 - (void)fetchPhotosForDate:(NSDate *)date
            completionBlock:(CBDPicsCompletion)completionBlock {
@@ -66,20 +66,18 @@
 
         CBDPicOfTheDay *pic = [[CBDPicOfTheDay alloc] initWithDictionary:dictionary];
         if (pic) {
-            //[self addPic:pic];
+            [self addPic:pic];
             completionBlock(pic, nil);
         }
         completionBlock(nil, nil);
     }];
     [task resume];
-//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-//    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
 
 }
 
-//- (NSArray *)addPic:(CBDPicOfTheDay *)pic {
-//    [_pics arrayByAddingObject:pic];
-//    return _pics;
-//}
+- (NSArray *)addPic:(CBDPicOfTheDay *)pic {
+    [_pics arrayByAddingObject:pic];
+    return _pics;
+}
 
 @end
